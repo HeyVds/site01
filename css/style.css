@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor-00: #faebd7;
+    --cor-01: #f0f8ff;
+
+    --cor-02: #7fffd4;
+    --cor-03: #00ffff;
+
+    --cor-04: #00008b;
+    --cor-05: #000307;
+
+    --cor-06: #8b008b;
+
+    --sombra: 0 0.3rem 2rem 0.2rem rgba(0, 0, 0, 0.35)
+}
+
+*{
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 400px;
+}
+
+body{
+    background-color: var(--cor-00);
+    color: var(--cor-05);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-04);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--sombra);
+}
+
+nav .logo a{
+    color: var(--cor-01);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav .menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav .menu li a{
+    color: var(--cor-01);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav .menu li a:hover{
+    color: var(--cor-06);
+    transition: 0.5s;
+}
+
+#hero-section{
+    position: relative;
+    height: 100vh;
+    background: url(../img/empresaria.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    text-align: center;
+    background-color: #050e1f8c;
+    color: var(--cor-00);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
