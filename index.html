@@ -17,8 +17,8 @@
 
         <div class="menu">     <!-- MEnu de navegação -->
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#info">Sobre</a></li>
+            <li><a href="#footer">Contato</a></li>
         </div>
     </nav>
 
@@ -33,7 +33,7 @@
     </section>
 
     <!-- section infos -->
-    <section class="info">
+    <section class="info" id="info">
         <div>
             <img src="./img/empresaria.jpg" alt="foto de uma mulher empresária">
         </div>
@@ -89,10 +89,14 @@
             <button>Saiba mais</button>
         </article>
         
+        <!-- Article 4 -->
+        <article>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nvYsTLZwm2k?si=3-NBWYVAzZ2OzmcK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div>
             <h3>Sobre a empresa</h3>
             <li><a href="#">Nome da empresa</a></li>
@@ -113,6 +117,28 @@
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Linkedin</a></li>
+        </div>
+
+        <div>
+            <h3>Gostaria de nos contatar?</h3>
+            <p>Preencha o formulário abaixo</p>
+            <form>
+                <label for="nome">Seu nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <br>
+
+                <label for="contato">Seu Número de Whatsapp</label>
+                <input type="number" name="contato" id="contato" placeholder="(XX) X XXXX-XXXX" required>
+                <br>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
+                <br>
+                <label for="mensagem">Sua Mensagem</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                <br>
+
+            </form>
         </div>
     </footer>
 </body>
