@@ -205,7 +205,7 @@ footer{
 
 footer div{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     flex-direction: column;
 }
 
@@ -224,6 +224,12 @@ footer div li a:hover{
     transition: 0.3s;
     color: var(--cor-06);
 }
+
+/* footer div form{
+display: flex;
+width: 10%;
+} */
+
 /* Configurando para outras telas */
 
 @media (max-width: 768px) {
