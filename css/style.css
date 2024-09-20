@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
-    --cor-00: #faebd7;
-    --cor-01: #f0f8ff;
-
-    --cor-02: #7fffd4;
-    --cor-03: #00ffff;
-
-    --cor-04: #00008b;
-    --cor-05: #000307;
-
-    --cor-06: #8b008b;
-
-    --sombra: 0 0.3rem 2rem 0.2rem rgba(0, 0, 0, 0.35)
+    --cor-00: #F7F7F7; /* Fundo da pagina */
+    --cor-01: #b5fce4; /* Fundo leve */
+    --cor-02: #343A40; /* texto */
+    --cor-03: #FF5722; /* Aviso */
+    --cor-04: #00008b; /* Header */
+    --cor-05: #007BFF; /* Botao */
+    --cor-06: #9228a7; /* Botao Chamada */
+    --sombra: 0 0.3rem 1rem 0.001rem rgba(0, 0, 0, 0.1)
 }
 
 *{
@@ -23,10 +19,13 @@
     padding: 0;
     margin: 0;
 }
+img{
+    border-radius: 2rem;
+}
 
 body{
     background-color: var(--cor-00);
-    color: var(--cor-05);
+    color: var(--cor-02);
 }
 
 nav{
@@ -43,7 +42,7 @@ nav{
 }
 
 nav .logo a{
-    color: var(--cor-01);
+    color: var(--cor-03);
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -57,7 +56,7 @@ nav .menu{
 }
 
 nav .menu li a{
-    color: var(--cor-01);
+    color: var(--cor-03);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 600;
@@ -110,10 +109,6 @@ nav .menu li a:hover{
     text-align: justify;
 }
 
-/* img{
-    width: 300px;
-} */
-
 #produto-mapa{
     display: flex;
     flex-wrap: wrap;
@@ -131,21 +126,23 @@ nav .menu li a:hover{
 
 #produto img{
     width: 100%;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     transition: transform 0.3s, box shadow 0.3s;
     box-shadow: var(--sombra);
 }
 
 #produto img:hover{
     transform: scale(1.05);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.687);
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.687);
 }
 
 #mapa-container{
     flex: 1;
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: var(--sombra);
 }
+
+
 
 #avaliacao{
     display: grid;
@@ -156,6 +153,7 @@ nav .menu li a:hover{
 
 #avaliacao article{
     display: flex;
+    flex-direction: column;
     align-items: center;
     border: 1px solid var(--cor-05);
     padding: 1rem;
@@ -170,25 +168,62 @@ nav .menu li a:hover{
 
 #avaliacao article img{
     width: 120px;
-    margin-right: 1rem;
-    border-radius: 0.5rem;
+    /* margin-right: 1rem; */
+    /* border-radius: 0.5rem; */
 }
 
 #avaliacao article button{
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     padding: 0.5rem 1rem;
-    background-color: var(--cor-02);
-    color: var(--cor-05);
+    background-color: var(--cor-01);
+    color: var(--cor-02);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #avaliacao article button:hover{
-    background-color: var(--cor-06);
+    background-color: var(--cor-04);
     transition: 0.5s;
+    color: var(--cor-00);
 }
 
+#avaliacao h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-around;
+    background-color: var(--cor-03);
+    height: 10rem;
+    align-items: center;
+}
+
+footer div{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+footer div li{
+    list-style: none;
+}
+
+footer div li a{
+    text-decoration: none;
+    color: var(--cor-00);
+    /* background-color: var(--cor-05); */
+    padding: 0.5rem;
+}
+
+footer div li a:hover{
+    transition: 0.3s;
+    color: var(--cor-06);
+}
 /* Configurando para outras telas */
 
 @media (max-width: 768px) {
