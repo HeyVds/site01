@@ -199,7 +199,7 @@ footer{
     /* flex: 1; */
     justify-content: space-around;
     background-color: var(--cor-03);
-    height: 10rem;
+    height: 15rem;
     align-items: center;
 }
 
